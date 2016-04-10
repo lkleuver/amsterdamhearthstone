@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="container">
+    {% for post in newsposts %}
+      <div class="newspost">
+        <h2><a href="{{ post.path.href }}">{{ post.title }}</a></h2>
+        {{ post.contents|safe }}
+      </div>
+    {% endfor %}
+  </div>
+
+{% endblock %}
