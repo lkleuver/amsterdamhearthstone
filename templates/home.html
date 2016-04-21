@@ -1,13 +1,39 @@
 {% extends 'base.html' %}
 
 {% block content %}
+
+  <div class="hero" style="background-image: url('/img/home_hero_1.jpg')">
+    <div class="payload">
+      <img src="img/leader.png" />
+    </div>
+  </div>
+
   <div class="container">
-    {% for post in newsposts %}
-      <div class="newspost">
-        <h2><a href="{{ post.path.href }}">{{ post.title }}</a></h2>
-        {{ post.contents|safe }}
+    <div class="row">
+      <div class="col-md-8">
+
+        <div class="paper">
+          {% for post in newsposts %}
+            <div class="newspost">
+              <h2><a href="{{ post.path.href }}">{{ post.title }}</a></h2>
+              {{ post.contents|safe }}
+            </div>
+          {% endfor %}
+        </div>
+
       </div>
-    {% endfor %}
+
+      <div class="col-md-4">
+        <div class="sidebar">
+          <h3>Upcoming</h3>
+          <p>
+            Fireside gathering #12<br />
+            <a href="#">register here</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
   </div>
 
 {% endblock %}
