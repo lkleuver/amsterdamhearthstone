@@ -2,7 +2,13 @@
 
 {% block content %}
   <div class="container">
-    <h1>{{ title }}</h1>
-    {{ contents|safe }}
+    <div class="row">
+      <div class="col-md-8 col-md-ffset-2">
+        <div class="paper">
+          <h1>{{ title }}</h1>
+          {{ contents|safe }}
+        </div>
+      </div>
+    </div>
   </div>
 {% endblock %}
