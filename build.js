@@ -9,7 +9,8 @@ var ignore = require('metalsmith-ignore');
 var collections = require('metalsmith-collections');
 var paths = require('metalsmith-paths');
 var fs = require('fs');
-
+var watch             = require('metalsmith-watch');
+var metalsmithExpress = require('metalsmith-express');
 
 var metalsmith = Metalsmith(__dirname)
   .use(paths())
@@ -34,6 +35,15 @@ var metalsmith = Metalsmith(__dirname)
     "**/*.less",
     "**/src/**/*"
   ]))
+  .use(metalsmithExpress())
+  .use (
+    watch({
+      paths: {
+        '${source}/**/*': "**/*"
+      },
+      livereload: true
+    })
+  )
   .build(function(err){
     if (err) throw err;
   });
