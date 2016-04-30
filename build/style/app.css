@@ -6558,10 +6558,20 @@ body {
 .paper {
   background-color: #fff;
   padding: 32px;
+  margin-top: 32px;
 }
 .sidebar {
   background-color: #231f1f;
   padding: 32px;
+}
+.navbar-default .navbar-nav.navbar-right li a {
+  font-size: 28px;
+  padding: 18px 16px 0 0;
+}
+.footer {
+  background-color: #262222;
+  margin: 32px 0 0 0;
+  min-height: 200px;
 }
 
 .hero {
@@ -6597,55 +6607,57 @@ body {
   font-style: normal;
   font-size: 16px;
   line-height: 1.5em;
-  font-family: 'Merriweather', serif;
+}
+h2,
+h3,
+h4,
+h5 {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #302B2B;
+  font-weight: 400;
+}
+h1 em,
+h2 em,
+h3 em {
+  font-size: 12px;
+  display: block;
+  color: grey;
+  padding-top: 4px;
+  font-weight: normal;
 }
 h1 {
-  font-family: inherit;
-  font-weight: 600;
-  font-style: inherit;
-  font-size: 4.25em;
-  line-height: 1.06em;
-  margin-top: 0.35em;
+  font-size: 2.369em;
+  color: #D03E39;
+  margin: 0;
+  padding: 0 0 32px 0;
 }
 h2 {
-  font-family: inherit;
-  font-weight: 600;
-  font-style: inherit;
-  font-size: 2.625em;
-  line-height: 1.14em;
-  margin-top: 0.57em;
-  margin-bottom: 0.57em;
+  font-size: 1.777em;
+  margin: 0;
+  padding: 0 0 16px 0;
 }
 h3 {
-  font-family: inherit;
-  font-weight: 600;
-  font-style: inherit;
-  font-size: 1.625em;
-  line-height: 1.9em;
-  margin-top: 0.92em;
-  margin-bottom: 0em;
+  font-size: 1.333em;
+  margin: 0;
+  padding: 0 0 10px 0;
 }
 h4 {
-  font-family: inherit;
-  font-weight: 600;
-  font-style: inherit;
   font-size: 1em;
-  line-height: 1.5em;
-  margin-top: 1.5em;
-  margin-bottom: 0em;
+  margin: 0;
+  padding: 0;
 }
 h5 {
-  font-family: inherit;
-  font-weight: 400;
-  font-style: italic;
   font-size: 1em;
-  line-height: 1.5em;
-  margin-top: 1.5em;
-  margin-bottom: 0em;
+  margin: 0;
+  padding: 0;
 }
 p {
   margin-top: 0;
   margin-bottom: 1.5em;
+  color: #534d4d;
+}
+p + h3 {
+  margin-top: 32px;
 }
 .sidebar h3 {
   color: #3ec0ea;

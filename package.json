@@ -20,6 +20,7 @@
     "metalsmith-collections": "^0.7.0",
     "metalsmith-concat": "^5.0.2",
     "metalsmith-express": "^0.1.0",
+    "metalsmith-if": "^0.1.1",
     "metalsmith-ignore": "^0.1.2",
     "metalsmith-include": "0.0.2",
     "metalsmith-layouts": "^1.6.4",
@@ -33,6 +34,7 @@
   },
   "scripts": {
     "build": "node build.js",
+    "work": "node build.js work",
     "deploy": "node deploy.js"
   }
 }
