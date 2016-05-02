@@ -11,8 +11,7 @@
     "type": "git",
     "url": "git://github.com/lkleuver/amsterdamhearthstone.git"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "async": "^2.0.0-rc.3",
     "aws-sdk": "^2.3.2",
@@ -20,18 +19,22 @@
     "metalsmith": "^2.1.0",
     "metalsmith-collections": "^0.7.0",
     "metalsmith-concat": "^5.0.2",
+    "metalsmith-express": "^0.1.0",
+    "metalsmith-if": "^0.1.1",
     "metalsmith-ignore": "^0.1.2",
     "metalsmith-include": "0.0.2",
     "metalsmith-layouts": "^1.6.4",
     "metalsmith-less": "^2.0.0",
     "metalsmith-markdown": "^0.2.1",
     "metalsmith-paths": "^2.1.2",
+    "metalsmith-watch": "^1.0.1",
     "mime-types": "^2.1.10",
     "recursive-readdir": "^2.0.0",
     "swig": "^1.4.2"
   },
   "scripts": {
     "build": "node build.js",
+    "work": "node build.js work",
     "deploy": "node deploy.js"
   }
 }
