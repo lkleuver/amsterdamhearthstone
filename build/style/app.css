@@ -6599,6 +6599,13 @@ body {
 .newspost {
   margin-bottom: 32px;
 }
+.news {
+  background-color: #fff;
+  max-width: 720px;
+  margin: auto;
+  margin-top: 80px;
+  padding: 32px;
+}
 
 @import url(https://fonts.googleapis.com/css?family=Merriweather:700);
 body {
