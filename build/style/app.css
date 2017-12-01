@@ -4372,8 +4372,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-  background-color: #d03e39;
-  border-color: #bb312c;
+  background-color: #46392d;
+  border-color: #322920;
 }
 .navbar-default .navbar-brand {
   color: #e0d9d9;
@@ -4398,7 +4398,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   color: #e3f0fe;
-  background-color: #bb312c;
+  background-color: #322920;
 }
 .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:hover,
@@ -4418,12 +4418,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-  border-color: #bb312c;
+  border-color: #322920;
 }
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
-  background-color: #bb312c;
+  background-color: #322920;
   color: #e3f0fe;
 }
 @media (max-width: 767px) {
@@ -4439,7 +4439,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #e3f0fe;
-    background-color: #bb312c;
+    background-color: #322920;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover,
@@ -6573,6 +6573,10 @@ body {
   margin: 32px 0 0 0;
   min-height: 200px;
 }
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #fff;
+}
 
 .hero {
   height: 434px;
@@ -6580,7 +6584,7 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background: #181616 url('img/hero_placeholder.jpg') no-repeat center bottom;
+  background: #181616 url("img/hero_placeholder.jpg") no-repeat center bottom;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -6590,7 +6594,7 @@ body {
 }
 .hero .payload {
   max-width: 418px;
-  margin: 200px auto;
+  margin: 80px auto;
 }
 .hero .payload img {
   max-width: 100%;
