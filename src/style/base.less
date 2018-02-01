@@ -35,6 +35,9 @@ body {
 }
 
 .hof {
+  hr {
+    clear: both;
+  }
   h2 {
     span {
       float: right;
@@ -49,6 +52,7 @@ body {
 
   table {
     width: 100%;
+
     tr {
       &:nth-child(even) {
         td {
@@ -58,10 +62,20 @@ body {
     }
     td {
       padding: 4px;
+      min-width: 140px;
     }
     td.rank {
       width: 140px;
       font-weight: bold;
+    }
+
+    td.photo {
+      max-width: 80px;
+      text-align: right;
+      img {
+        max-width: 200px;
+        width: 100%;
+      }
     }
   }
 }
