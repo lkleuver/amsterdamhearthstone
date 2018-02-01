@@ -33,3 +33,35 @@ body {
 .navbar-default .navbar-nav > li > a:focus {
   color: #fff;
 }
+
+.hof {
+  h2 {
+    span {
+      float: right;
+      font-size: 14px;
+    }
+  }
+  h3 {
+    margin-top: -10px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  table {
+    width: 100%;
+    tr {
+      &:nth-child(even) {
+        td {
+          background-color: #eee;
+        }
+      }
+    }
+    td {
+      padding: 4px;
+    }
+    td.rank {
+      width: 140px;
+      font-weight: bold;
+    }
+  }
+}
