@@ -6577,6 +6577,9 @@ body {
 .navbar-default .navbar-nav > li > a:focus {
   color: #fff;
 }
+.hof hr {
+  clear: both;
+}
 .hof h2 span {
   float: right;
   font-size: 14px;
@@ -6594,10 +6597,19 @@ body {
 }
 .hof table td {
   padding: 4px;
+  min-width: 140px;
 }
 .hof table td.rank {
   width: 140px;
   font-weight: bold;
+}
+.hof table td.photo {
+  max-width: 80px;
+  text-align: right;
+}
+.hof table td.photo img {
+  max-width: 200px;
+  width: 100%;
 }
 
 .hero {
