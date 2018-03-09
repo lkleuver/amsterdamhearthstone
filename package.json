@@ -11,7 +11,9 @@
     "type": "git",
     "url": "git://github.com/lkleuver/amsterdamhearthstone.git"
   },
-  "dependencies": {},
+  "dependencies": {
+    "npm": "^5.7.1"
+  },
   "devDependencies": {
     "async": "^2.0.0-rc.3",
     "aws-sdk": "^2.3.2",
